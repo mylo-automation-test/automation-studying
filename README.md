@@ -1,1 +1,1 @@
-# automation-studying - QA Automation Practice Repository
+Automation Studying — QA Java test automation practice
