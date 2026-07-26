@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Check your password strenght ");
+        System.out.println("Check your password strength ");
         String userPassword = scanner.nextLine();
         PasswordValidator validator = new PasswordValidator(userPassword);
         List<String> errors = validator.validate();
