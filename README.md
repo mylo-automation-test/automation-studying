@@ -1,1 +1,1 @@
-# automation-studying
+# automation-studying - QA Automation Practice Repository
