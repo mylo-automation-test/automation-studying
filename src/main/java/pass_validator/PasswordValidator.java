@@ -49,10 +49,10 @@ public class PasswordValidator {
             errors.add("Password must contain at least one digit");
         }
         if (!hasDigit()){
-            errors.add("Password must containt at lease one uppercase charactter");
+            errors.add("Password must contain at least one uppercase character");
         }
         if (!hasSpecialCharacter()){
-            errors.add("Password must containt at lease one special charactter");
+            errors.add("Password must contain at least one special character");
         }
 
         return errors;
