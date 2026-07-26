@@ -1,1 +1,1 @@
-# automation-studying
+# automation-studying test automation practice
