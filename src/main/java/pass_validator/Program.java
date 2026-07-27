@@ -18,7 +18,7 @@ public class Program {
             System.out.println("Password is valid");
         } else {
             for (String error : errors){
-                System.out.println(errors);
+                System.out.println(error);
             }
         }
     scanner.close();

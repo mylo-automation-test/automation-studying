@@ -14,15 +14,15 @@ public class PasswordValidator {
 
     private boolean hasDigit(){
         for (char symbol : password.toCharArray()){
-            if (Character.isDigit(symbol));
+            if (Character.isDigit(symbol))
             return true;
         }
         return false;
     }
 
-    private boolean isUpperCase(){
+    private boolean hasUpperCase(){
         for (char symbol : password.toCharArray()){
-            if (Character.isDigit(symbol));
+            if (Character.isUpperCase(symbol))
             return true;
         }
         return false;
@@ -30,7 +30,7 @@ public class PasswordValidator {
 
     private boolean hasSpecialCharacter(){
         for (char symbol : password.toCharArray()){
-            if (Character.isDigit(symbol));
+            if (!Character.isLetterOrDigit(symbol))
             return true;
         }
         return false;
@@ -48,7 +48,7 @@ public class PasswordValidator {
         if (!hasDigit()){
             errors.add("Password must contain at least one digit");
         }
-        if (!hasDigit()){
+        if (!hasUpperCase()){
             errors.add("Password must contain at least one uppercase character");
         }
         if (!hasSpecialCharacter()){
@@ -56,9 +56,7 @@ public class PasswordValidator {
         }
 
         return errors;
-}
-
-
+    }
 
 
 }
