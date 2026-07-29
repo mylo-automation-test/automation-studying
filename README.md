@@ -1,1 +1,16 @@
-Automation Studying — QA Java test automation practicefdsgsdfgsdfhsdfhsdfh
+# Password Validator
+
+Програма на Java, яка перевіряє надійність пароля. Абабаба
+
+# Правила
+
+Пароль має бути щонайменше 8 символів і містити хоча б 1 цифр, 1 велику букву та  1 спеціальний символ.
+
+# Запуск
+
+Запустити Program.main() в IDE, ввести пароль у консоль
+
+# Структура
+
+PasswordValidator: Логіка перевірки
+Program: Точка входу
