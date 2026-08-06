@@ -42,23 +42,28 @@ public class PasswordValidator {
     public List<String> validate (){
         List<String> errors = new ArrayList<>();
         if (password.isEmpty()) {
-            errors.add("Password is empty");
+            errors.add(ValidationError.EMPTY.getMessage());
             return errors;
         }
         if (password.length() < minLenght) {
-            errors.add("Password is too short");
+            errors.add(ValidationError.TOO_SHORT.getMessage());
         }
         if (!hasDigit()){
-            errors.add("Password must contain at least one digit");
+            errors.add(ValidationError.NO_DIGIT.getMessage());
         }
         if (!hasUpperCase()){
-            errors.add("Password must contain at least one uppercase character");
+            errors.add(ValidationError.NO_UPPERCASE.getMessage());
         }
         if (!hasSpecialCharacter()){
-            errors.add("Password must contain at least one special character");
+            errors.add(ValidationError.NO_SPECIAL.getMessage());
         }
 
         return errors;
+    }
+
+    public boolean isValid() {
+        List<String> errors = validate();
+        return errors.isEmpty();
     }
 
 
